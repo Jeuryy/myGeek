@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+#about {
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*margin-top: 25px;*/
+    background-color: #96b9f05e;
+}
+
+.about-column1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    /*margin-bottom: 25px;*/
+    /*margin: 1.5rem 0 0 0;*/
+}
+
+.about-column2 {
+    margin-left: 50px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5px;
+    /*margin-bottom: 25px;*/
+    /*margin: 1.5rem 0 0 0;*/
+}
+
+.about-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #6f6d6d;
+}
+
+.about-link:hover {
+    color: #000000;
+    transition: 0.2s;
+}
+
+.about-column3 {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    /*margin: 1.5rem 0 0 0;*/
+}
+
+.about-form h3 {
+    margin-bottom: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.about-form {
+    margin-top: 25px;
+}
+
+input {
+    margin-bottom: 15px;
+    border: 1px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    padding: 5px;
+}
+
+textarea {
+    border: 1px;
+    width: 100%;
+    resize: none;
+    font-family: 'Kanit', sans-serif;
+    padding: 5px;
+}
+
+.about-form button {
+    background: #838385ce;
+    margin: 5px 0 0 0;
+}
+
+.about-form button:hover {
+    background: #1c19dace;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1088px) {
+    .about-column3 {
+        width: 100%;
+    }
+    .about-form {
+        width: 100%;
+        margin-top: 0;
+    }
+}

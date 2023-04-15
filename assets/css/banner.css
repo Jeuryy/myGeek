@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+#banner {
+    height: 350px;
+    /*box-sizing: border-box;*/
+    object-fit: cover;
+    background: url("/assets/img/banner.jpg") no-repeat;
+    background-size: cover;
+    /*filter: blur(2px);
+    -webkit-filter: blur(2px);*/
+}
+
+.banner-h2 {
+    color: #fff;
+    padding: 8rem 0 0 15rem;
+    font-family: 'Kanit', sans-serif;
+    /*opacity: 0;*/
+}
+
+.banner-p {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    padding: 2rem 0 0 15rem;
+}
+
+.banner-button {
+    margin: 2rem 0 0 15rem;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background: #373649;
+}
+
+.banner-button:hover {
+    background: #119f49;
+    transition: 1s;
+}
+
+@media screen and (max-width: 805px) {
+    .banner-h2 {
+        color: #fff;
+        padding: 8rem 0 0 7rem;
+        /*opacity: 0;*/
+    }
+    .banner-p {
+        color: #fff;
+        padding: 2rem 0 0 7rem;
+    }
+    .banner-button {
+        margin: 2rem 0 0 7rem;
+    }
+}
