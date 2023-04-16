@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
 #banner {
     height: 350px;
     /*box-sizing: border-box;*/
     object-fit: cover;
-    background: url("/assets/img/banner.jpg") no-repeat;
+    background: url("../img/banner.png") no-repeat;
     background-size: cover;
     /*filter: blur(2px);
     -webkit-filter: blur(2px);*/
@@ -11,44 +11,47 @@
 
 .banner-h2 {
     color: #fff;
-    padding: 8rem 0 0 15rem;
+    padding: 4rem 0 0 5rem;
     font-family: 'Kanit', sans-serif;
+    font-size: 48px;
     /*opacity: 0;*/
 }
 
 .banner-p {
     color: #fff;
     font-family: 'Kanit', sans-serif;
-    padding: 2rem 0 0 15rem;
+    padding: 2rem 0 0 5rem;
+    font-size: 18px;
 }
 
 .banner-button {
-    margin: 2rem 0 0 15rem;
+    margin: 3rem 0 0 5rem;
     width: 130px;
     height: 30px;
     cursor: pointer;
     border-radius: 10px;
     border: none;
     color: #fff;
-    background: #373649;
+    background: #ccf6e958;
 }
 
 .banner-button:hover {
-    background: #119f49;
+    background: #119f4ad6;
     transition: 1s;
 }
 
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 496px) {
     .banner-h2 {
         color: #fff;
-        padding: 8rem 0 0 7rem;
+        font-size: 40px;
+        padding: 8rem 0 0 2rem;
         /*opacity: 0;*/
     }
     .banner-p {
         color: #fff;
-        padding: 2rem 0 0 7rem;
+        padding: 0.5rem 0 0 2rem;
     }
     .banner-button {
-        margin: 2rem 0 0 7rem;
+        margin: 1.5rem 0 0 2rem;
     }
 }

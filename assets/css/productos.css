@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+#logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+#logo a:hover {
+    color: #17026c;
+}
+
+#content {
+    background-color: #07070711;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+}
+
+.products-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.products-title h3 {
+    margin-left: 10rem;
+}
+
+.products-title a {
+    text-decoration: none;
+    padding: 5px 8px 5px 8px;
+    background: #4515d3;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 10rem;
+}
+
+.products-title a:hover {
+    background: #321292;
+    transition: 0.3s;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    /*margin-left: 50px;*/
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.product {
+    margin: 0 1rem 0 1rem;
+    width: 150px;
+}
+
+.product img {
+    width: 150px;
+}
+
+.product a {
+    text-decoration: none;
+}
+
+.product a:hover {
+    font-weight: 600;
+    color: #000;
+    transition: 0.1s;
+}
+
+.about-form button {
+    width: 200px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    background: #3625ebc6;
+    border: 1px solid #0000004e;
+}
+
+@media screen and (max-width: 888px) {
+    .products-title h3 {
+        margin-left: 2.5rem;
+    }
+    .products-title a {
+        margin-right: 2.5rem;
+    }
+    .products {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 402px) {
+    .products-title h3 {
+        margin-left: 1rem;
+    }
+    .products-title a {
+        margin-right: 2rem;
+    }
+}

@@ -65,6 +65,7 @@ input {
     border-radius: 5px;
     font-family: 'Kanit', sans-serif;
     padding: 5px;
+    outline: 1px solid #0000003b;
 }
 
 textarea {
@@ -73,10 +74,12 @@ textarea {
     resize: none;
     font-family: 'Kanit', sans-serif;
     padding: 5px;
+    outline: 1px solid #0000003b;
+    /*overflow-y: auto;*/
 }
 
 .about-form button {
-    background: #838385ce;
+    background: #185bd8;
     margin: 5px 0 0 0;
 }
 
