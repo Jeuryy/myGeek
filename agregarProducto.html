@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/agregarProductos.css">
     <link rel="stylesheet" href="./assets/css/about.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <title>Iniciar sesión</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Agregar nuevo producto</title>
 </head>
 
 <body>
@@ -23,15 +23,21 @@
                 <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
         </div>
-    </header>
-    <!--LOGIN-->
-    <section id="login">
         <div>
-            <form action="" class="login-form">
-                <h3>Iniciar Sesión</h3>
-                <input type="text" title="correo" placeholder="Correo electrónico">
-                <input type="password" title="password" placeholder="Contraseña">
-                <button type="submit" class="banner-button">Entrar</button>
+            <a href="#"><button class="login">Menu</button></a>
+        </div>
+    </header>
+    <!--AGREGAR-->
+    <section id="agregar">
+        <div>
+            <form action="" class="agregar-form">
+                <h3>Nuevo producto</h3>
+                <input type="text" title="Enlace de la imagen" placeholder="Link de la imagen">
+                <input type="text" title="Categoría" placeholder="Categoría">
+                <input type="text" title="Nombre del producto" placeholder="Nombre del producto">
+                <input type="number" title="Precio del producto" placeholder="Precio">
+                <textarea name="descripcion" id="descripcion" placeholder="Descripción del producto" cols="30" rows="5"></textarea>
+                <button type="submit" class="banner-button">Agregar producto</button>
             </form>
         </div>
     </section>
