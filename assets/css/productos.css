@@ -62,6 +62,7 @@
 }
 
 .product img {
+    height: 160px;
     width: 150px;
 }
 
