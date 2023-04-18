@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
 #logo a {
     text-decoration: none;
     color: #000;
@@ -68,12 +68,14 @@
 
 .product a {
     text-decoration: none;
+    color: #352bef;
+    cursor: pointer;
+    font-weight: 800;
 }
 
 .product a:hover {
-    font-weight: 600;
-    color: #000;
-    transition: 0.1s;
+    color: #0ba334;
+    transition: 0.7s;
 }
 
 .about-form button {
