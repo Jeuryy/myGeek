@@ -88,6 +88,10 @@
     border: 1px solid #0000004e;
 }
 
+.descripcion {
+    display: none;
+}
+
 @media screen and (max-width: 888px) {
     .products-title h3 {
         margin-left: 2.5rem;
