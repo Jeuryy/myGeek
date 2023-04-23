@@ -112,8 +112,13 @@
     font-weight: 800;
 }
 
-.product a {
-    /*margin-left: 0.8rem;*/
+.product .ver {
+    display: none;
+}
+
+.product-CRUD {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 1006px) {

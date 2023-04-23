@@ -59,6 +59,7 @@
 .product {
     margin: 0 1rem 1rem 1rem;
     width: 150px;
+    background: #07070705;
 }
 
 .product img {
@@ -90,6 +91,15 @@
 
 .descripcion {
     display: none;
+}
+
+.product .ver {
+    display: none;
+}
+
+.product-CRUD {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 888px) {
