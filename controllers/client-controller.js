@@ -1,5 +1,4 @@
 import { productServices } from "../service/client-service.js";
-/*console.log(productServices);*/
 
 const createNewLine = (image, name, price, description, id) => {
     const line = document.createElement("div");
@@ -13,10 +12,17 @@ const createNewLine = (image, name, price, description, id) => {
                     <a href="verProducto.html" target="_blank" class="ver">Ver producto</a>
                     <a href="verProducto.html" target="_blank" class="see"><i class="fa fa-sharp fa-light fa-eye"></i></a>
                     <a href="editarProducto.html" class="edit"><i class="fa fa-light fa-pen"></i></a>
-                    <a href="index.html" class="delete"><i class="fa fa-solid fa-trash"></i></a>
+                    <a href="productos.html" class="delete" id="${id}"><i class="fa fa-solid fa-trash"></i></a>
                     </div>
                 `;
     line.innerHTML = content;
+    const btn = line.querySelector(".delete");
+    btn.addEventListener("click", () => {
+        const id = btn.id;
+        productServices.deleteProduct(id).then(res => {
+            console.log(res);
+        }).catch(err => alert(err));
+    });
     return line;
 };
 
@@ -29,7 +35,3 @@ productServices.productsList().then((data) => {
         div.appendChild(newLine);
     })
 }).catch((error) => alert("Hubo un error al tratar de cargar los datos"));
-
-const deleteProduct = (id) => {
-    console.log("Delete product id:", id);
-}

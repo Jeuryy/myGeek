@@ -9,8 +9,7 @@ form.addEventListener("submit", (event) => {
     const categoria = document.querySelector("[data-categoria]").value;
     const price = document.querySelector("[data-price]").value;
     const description = document.querySelector("[data-description]").value;
-    console.log(categoria, " - ", image, " - ", name, " - ", price, " - ", description);
-    productServices.createProduct(categoria, image, name, price, description).then(res => {
+    productServices.createProduct(categoria, image, name, price, description).then(() => {
         window.location.href = "/index.html";
     }).catch(err => console.log(err));
 });
