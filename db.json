@@ -49,8 +49,8 @@
       "id": "446e42d0-a479-493e-bd00-3599df2a954a"
     },
     {
-      "categoria": "Anime",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6N4PXqbKWoTGpdHyR7ySIAF_7dS6XvKjacQ&usqp=CAU",
+      "categoria": "[object Object]",
       "name": "Toto",
       "price": "6",
       "description": "Lorem",

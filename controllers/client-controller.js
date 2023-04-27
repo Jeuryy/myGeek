@@ -11,7 +11,7 @@ const createNewLine = (image, name, price, description, id) => {
                     <div class="product-CRUD">
                     <a href="verProducto.html" target="_blank" class="ver">Ver producto</a>
                     <a href="verProducto.html" target="_blank" class="see"><i class="fa fa-sharp fa-light fa-eye"></i></a>
-                    <a href="editarProducto.html" class="edit"><i class="fa fa-light fa-pen"></i></a>
+                    <a href="editarProducto.html?id=${id}" class="edit"><i class="fa fa-light fa-pen"></i></a>
                     <a href="productos.html" class="delete" id="${id}"><i class="fa fa-solid fa-trash"></i></a>
                     </div>
                 `;
