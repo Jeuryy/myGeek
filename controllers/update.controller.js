@@ -2,7 +2,7 @@ import { productServices } from "../service/client-service.js";
 
 const form = document.querySelector("[data-form]");
 
-const getInfo = () => {
+const getInfo = async() => {
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
 
@@ -15,16 +15,13 @@ const getInfo = () => {
     const name = document.querySelector("[data-name]");
     const price = document.querySelector("[data-price]");
     const description = document.querySelector("[data-description]");
+    const product = await productServices.productDetails(id);
+    image.value = product.image;
+    categoria.value = product.categoria;
+    name.value = product.name;
+    price.value = product.price;
+    description.value = product.description;
 
-    //console.log(categoria, name, price, description, image);
-
-    productServices.productDetails(id).then((product) => {
-        image.value = product.image;
-        categoria.value = product.categoria;
-        name.value = product.name;
-        price.value = product.price;
-        description.value = product.description;
-    })
 };
 
 getInfo();
