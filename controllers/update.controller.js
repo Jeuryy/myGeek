@@ -15,12 +15,22 @@ const getInfo = async() => {
     const name = document.querySelector("[data-name]");
     const price = document.querySelector("[data-price]");
     const description = document.querySelector("[data-description]");
-    const product = await productServices.productDetails(id);
-    image.value = product.image;
-    categoria.value = product.categoria;
-    name.value = product.name;
-    price.value = product.price;
-    description.value = product.description;
+
+    try {
+        const product = await productServices.productDetails(id);
+        if (product.image && product.categoria && product.name && product.price && product.description) {
+            image.value = product.image;
+            categoria.value = product.categoria;
+            name.value = product.name;
+            price.value = product.price;
+            description.value = product.description;
+        } else {
+            throw new Error();
+        }
+    } catch (error) {
+        alert("Hubo un error");
+        window.location.href = "productos.html";
+    }
 
 };
 
